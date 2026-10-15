@@ -21,7 +21,7 @@
 
     <!-- ANNOUNCEMENT BAR -->
     <div class="bg-slate-900 text-white text-xs sm:text-sm py-2 px-4 text-center font-medium tracking-wide">
-        📦 Darmowa dostawa od 150 zł | Wszystko drukowane z ekologicznego bioplastiku PLA 🌿
+        📦 Darmowa dostawa od 150 zł | Do każdego zamówienia naklejka gratis! 🎁
     </div>
 
     <!-- HEADER -->
@@ -64,16 +64,16 @@
                     <div class="max-w-xl text-center md:text-left mb-8 md:mb-0">
                         <span class="bg-emerald-500/20 text-emerald-400 text-xs px-3 py-1 rounded-full uppercase tracking-wider font-bold border border-emerald-500/30">Kolekcja Halloween 🎃</span>
                         <h1 class="text-3xl sm:text-5xl font-black tracking-tight mt-3 mb-4">Wysokiej jakości wydruki 3D</h1>
-                        <p class="text-slate-400 text-sm sm:text-base mb-6">Odkryj ruchome figurki zwierzaków, clickery Halloween, breloczki oraz zestawy Create.</p>
+                        <p class="text-slate-400 text-sm sm:text-base mb-6">Odkryj ruchome figurki zwierzaków, clickery Halloween oraz unikalne projekty 3D.</p>
                         <button onclick="document.getElementById('catalog-grid').scrollIntoView({behavior: 'smooth'})" class="bg-sky-500 hover:bg-sky-600 text-white font-bold px-6 py-3 rounded-xl shadow-lg transition">
                             Przejdź do oferty <i class="fa-solid fa-arrow-down ml-2"></i>
                         </button>
                     </div>
                     <div class="w-full md:w-auto flex justify-center">
                         <div class="bg-slate-800 p-6 rounded-3xl border border-slate-700 shadow-xl text-center max-w-xs">
-                            <div class="text-5xl mb-3">🎃</div>
-                            <h3 class="font-bold text-white text-base">Seria Halloween</h3>
-                            <p class="text-xs text-slate-400 mt-1">Żaby Zombie, Clickery Dynie i strasznie fajne gadżety.</p>
+                            <div class="text-5xl mb-3">🎁</div>
+                            <h3 class="font-bold text-white text-base">Gratis do zamówienia</h3>
+                            <p class="text-xs text-slate-400 mt-1">Do każdego zamówienia dorzucamy naszą firmową naklejkę 3D!</p>
                         </div>
                     </div>
                 </div>
@@ -82,16 +82,15 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
                 <div class="flex flex-col sm:flex-row justify-between items-center mb-8 border-b border-slate-200 pb-4">
                     <div>
-                        <h2 class="text-2xl font-black text-slate-900">Dostępne Produkty</h2>
-                        <p class="text-xs text-slate-500">Wybierz kategoryzację, aby filtrować asortyment.</p>
+                        <h2 class="text-2xl font-black text-slate-900">Dostępne Kolekcje</h2>
+                        <p class="text-xs text-slate-500">Wybierz kategorię, aby przefiltrować ofertę sklepu.</p>
                     </div>
                     <div class="flex flex-wrap gap-2 mt-4 sm:mt-0" id="category-filters">
-                        <button onclick="filterCategory('Wszystko')" class="cat-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-slate-900 text-white transition">Wszystko</button>
-                        <button onclick="filterCategory('Halloween')" class="cat-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-slate-200 text-slate-700 hover:bg-slate-300 transition">Halloween 🎃</button>
-                        <button onclick="filterCategory('Create')" class="cat-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-slate-200 text-slate-700 hover:bg-slate-300 transition">Create 🎨</button>
-                        <button onclick="filterCategory('Zwierzaki')" class="cat-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-slate-200 text-slate-700 hover:bg-slate-300 transition">Zwierzaki</button>
-                        <button onclick="filterCategory('Breloczki')" class="cat-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-slate-200 text-slate-700 hover:bg-slate-300 transition">Breloczki</button>
-                        <button onclick="filterCategory('Mystery Boxy')" class="cat-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-slate-200 text-slate-700 hover:bg-slate-300 transition">Mystery Boxy</button>
+                        <button onclick="filterCategory('Wszystko')" class="cat-btn px-3 py-1.5 rounded-full text-xs font-semibold bg-slate-900 text-white transition">Wszystko</button>
+                        <button onclick="filterCategory('Halloween')" class="cat-btn px-3 py-1.5 rounded-full text-xs font-semibold bg-slate-200 text-slate-700 hover:bg-slate-300 transition">Halloween 🎃</button>
+                        <button onclick="filterCategory('Inne')" class="cat-btn px-3 py-1.5 rounded-full text-xs font-semibold bg-slate-200 text-slate-700 hover:bg-slate-300 transition">Inne</button>
+                        <button onclick="filterCategory('Popularne')" class="cat-btn px-3 py-1.5 rounded-full text-xs font-semibold bg-slate-200 text-slate-700 hover:bg-slate-300 transition">Popularne 🔥</button>
+                        <button onclick="filterCategory('Nowości')" class="cat-btn px-3 py-1.5 rounded-full text-xs font-semibold bg-slate-200 text-slate-700 hover:bg-slate-300 transition">Nowości ⭐</button>
                     </div>
                 </div>
 
@@ -103,8 +102,7 @@
         <div id="view-about" class="view-section hidden max-w-3xl mx-auto px-4 py-16">
             <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm space-y-4">
                 <h2 class="text-2xl font-black text-slate-900">O nas – Druki 3D by Boka</h2>
-                <p class="text-slate-600 text-sm leading-relaxed">Pasja do technologii druku 3D połączona z tworzeniem wyjątkowych, ruchomych figurek flexi. Każdy projekt przechodzi przez nasze rączki, aby zagwarantować najwyższą jakość i zadowolenie klientów.</p>
-                <p class="text-slate-600 text-sm leading-relaxed">Korzystamy wyłącznie z bezpiecznego, ekologicznego bioplastiku PLA pochodzenia roślinnego.</p>
+                <p class="text-slate-600 text-sm leading-relaxed">Pasja do technologii druku 3D połączona z tworzeniem wyjątkowych, ruchomych figurek flexi. Każdy projekt przechodzi przez nasze ręce, aby zagwarantować najwyższą jakość.</p>
             </div>
         </div>
 
@@ -114,16 +112,21 @@
                 <h2 class="text-2xl font-black text-slate-900 mb-6">Napisz do nas</h2>
                 <form onsubmit="handleContactSubmit(event)" class="space-y-4">
                     <div>
-                        <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Twoje Imię</label>
-                        <input type="text" id="cnt-name" required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-sky-500">
+                        <label class="block text-xs font-bold uppercase text-slate-600 mb-1">E-mail nadawcy</label>
+                        <input type="email" id="cnt-email" required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-sky-500" placeholder="twój@email.com">
                     </div>
                     <div>
-                        <label class="block text-xs font-bold uppercase text-slate-600 mb-1">E-mail</label>
-                        <input type="email" id="cnt-email" required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-sky-500">
+                        <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Kategoria problemu / Zgłoszenie</label>
+                        <select id="cnt-problem" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm font-medium bg-white focus:outline-none focus:border-sky-500">
+                            <option value="Problem z zamówieniem">Problem z zamówieniem</option>
+                            <option value="Zapytanie o kod rabatowy">Zapytanie o kod rabatowy</option>
+                            <option value="Propozycja nowego druku">Propozycja nowego druku</option>
+                            <option value="Inne">Inne</option>
+                        </select>
                     </div>
                     <div>
-                        <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Wiadomość</label>
-                        <textarea id="cnt-msg" rows="4" required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-sky-500"></textarea>
+                        <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Treść wiadomości</label>
+                        <textarea id="cnt-msg" rows="4" required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-sky-500" placeholder="Napisz w czym możemy pomóc..."></textarea>
                     </div>
                     <button type="submit" class="bg-slate-900 hover:bg-slate-800 text-white font-bold px-6 py-3 rounded-xl text-sm transition">Wyślij wiadomość</button>
                 </form>
@@ -134,7 +137,7 @@
         <div id="view-login" class="view-section hidden max-w-md mx-auto px-4 py-20">
             <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm text-center">
                 <h2 class="text-xl font-black text-slate-900 mb-2">Panel Administratora</h2>
-                <p class="text-xs text-slate-400 mb-6">Wpisz dane logowania (domyślny login: <strong>admin</strong>, hasło: <strong>admin</strong>)</p>
+                <p class="text-xs text-slate-400 mb-6">Zaloguj się do panelu zarządczego</p>
                 <form onsubmit="handleLogin(event)" class="space-y-4 text-left">
                     <div>
                         <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Login</label>
@@ -159,45 +162,21 @@
                     </div>
                     <button onclick="handleLogout()" class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-xl text-xs font-bold transition">Wyloguj</button>
                 </div>
-                <div class="flex border-b border-slate-200 px-6 bg-slate-50 overflow-x-auto">
-                    <button onclick="switchAdminTab('products')" id="admin-tab-products" class="py-3 px-6 font-bold text-sm text-sky-600 border-b-2 border-sky-500">Produkty i Magazyn</button>
-                    <button onclick="switchAdminTab('orders')" id="admin-tab-orders" class="py-3 px-6 font-bold text-sm text-slate-500 hover:text-slate-800">Zamówienia (<span id="orders-badge">0</span>)</button>
-                    <button onclick="switchAdminTab('messages')" id="admin-tab-messages" class="py-3 px-6 font-bold text-sm text-slate-500 hover:text-slate-800">Wiadomości z Kontakt (<span id="messages-badge">0</span>)</button>
+                <div class="flex border-b border-slate-200 px-4 bg-slate-50 overflow-x-auto text-xs font-bold">
+                    <button onclick="switchAdminTab('orders')" id="admin-tab-orders" class="py-3 px-4 text-sky-600 border-b-2 border-sky-500 whitespace-nowrap">Zamówienia (<span id="orders-badge">0</span>)</button>
+                    <button onclick="switchAdminTab('products')" id="admin-tab-products" class="py-3 px-4 text-slate-500 hover:text-slate-800 whitespace-nowrap">Przedmioty / Magazyn</button>
+                    <button onclick="switchAdminTab('coupons')" id="admin-tab-coupons" class="py-3 px-4 text-slate-500 hover:text-slate-800 whitespace-nowrap">Rabaty / Kody</button>
+                    <button onclick="switchAdminTab('filaments')" id="admin-tab-filaments" class="py-3 px-4 text-slate-500 hover:text-slate-800 whitespace-nowrap">Filamenty</button>
+                    <button onclick="switchAdminTab('messages')" id="admin-tab-messages" class="py-3 px-4 text-slate-500 hover:text-slate-800 whitespace-nowrap">Napisz do nas (<span id="messages-badge">0</span>)</button>
+                    <button onclick="switchAdminTab('settings')" id="admin-tab-settings" class="py-3 px-4 text-slate-500 hover:text-slate-800 whitespace-nowrap">Ustawienia & Admin Login</button>
                 </div>
             </div>
 
-            <!-- ADMIN PRODUCTS -->
-            <div id="admin-content-products" class="space-y-6">
-                <div class="flex justify-between items-center bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
-                    <div>
-                        <h3 class="font-bold text-slate-900">Zarządzaj asortymentem</h3>
-                        <p class="text-xs text-slate-500">Dodawaj nowe przedmioty, edytuj stany magazynowe i zdjęcia.</p>
-                    </div>
-                    <button onclick="openProductModal()" class="bg-sky-500 hover:bg-sky-600 text-white font-bold px-4 py-2.5 rounded-xl text-xs transition flex items-center space-x-2">
-                        <i class="fa-solid fa-plus"></i> <span>Dodaj produkt</span>
-                    </button>
-                </div>
-                <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
-                    <table class="w-full text-left border-collapse">
-                        <thead>
-                            <tr class="bg-slate-100 text-slate-600 text-xs uppercase font-semibold border-b border-slate-200">
-                                <th class="p-4">Produkt</th>
-                                <th class="p-4">Cena</th>
-                                <th class="p-4">Magazyn</th>
-                                <th class="p-4">Dostępność</th>
-                                <th class="p-4 text-right">Akcje</th>
-                            </tr>
-                        </thead>
-                        <tbody id="admin-products-table-body" class="divide-y divide-slate-100 text-sm"></tbody>
-                    </table>
-                </div>
-            </div>
-
-            <!-- ADMIN ORDERS -->
-            <div id="admin-content-orders" class="space-y-6 hidden">
+            <!-- TAB: ORDERS -->
+            <div id="admin-content-orders" class="space-y-6">
                 <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
                     <h3 class="font-bold text-slate-900">Zamówienia klientów</h3>
-                    <p class="text-xs text-slate-500">Obsługuj napływające zamówienia, zmieniaj ich statusy lub je usuwaj.</p>
+                    <p class="text-xs text-slate-500">Obsługuj zamówienia, zmieniaj statusy lub usuwaj je po zakończeniu.</p>
                 </div>
                 <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
                     <table class="w-full text-left border-collapse">
@@ -205,7 +184,7 @@
                             <tr class="bg-slate-100 text-slate-600 text-xs uppercase font-semibold border-b border-slate-200">
                                 <th class="p-4">ID / Data</th>
                                 <th class="p-4">Klient & Płatność</th>
-                                <th class="p-4">Produkty i Kolor</th>
+                                <th class="p-4">Produkty i Filament</th>
                                 <th class="p-4">Status</th>
                                 <th class="p-4 text-right">Zarządzaj</th>
                             </tr>
@@ -215,23 +194,110 @@
                 </div>
             </div>
 
-            <!-- ADMIN MESSAGES -->
-            <div id="admin-content-messages" class="space-y-6 hidden">
-                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
-                    <h3 class="font-bold text-slate-900">Wiadomości z formularza kontaktowego</h3>
-                    <p class="text-xs text-slate-500">Zapytania od klientów wysłane przez zakładkę Kontakt.</p>
+            <!-- TAB: PRODUCTS -->
+            <div id="admin-content-products" class="space-y-6 hidden">
+                <div class="flex justify-between items-center bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                    <div>
+                        <h3 class="font-bold text-slate-900">Przedmioty w Magazynie</h3>
+                        <p class="text-xs text-slate-500">Dodawaj przedmioty, edytuj je, określaj stan magazynowy i wybór filamentów.</p>
+                    </div>
+                    <button onclick="openProductModal()" class="bg-sky-500 hover:bg-sky-600 text-white font-bold px-4 py-2.5 rounded-xl text-xs transition flex items-center space-x-2">
+                        <i class="fa-solid fa-plus"></i> <span>Dodaj przedmiot</span>
+                    </button>
                 </div>
                 <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
                     <table class="w-full text-left border-collapse">
                         <thead>
                             <tr class="bg-slate-100 text-slate-600 text-xs uppercase font-semibold border-b border-slate-200">
-                                <th class="p-4">Data / Nadawca</th>
-                                <th class="p-4">Treść wiadomości</th>
+                                <th class="p-4">Produkt</th>
+                                <th class="p-4">Cena</th>
+                                <th class="p-4">Magazyn</th>
+                                <th class="p-4">Filament</th>
+                                <th class="p-4 text-right">Akcje</th>
+                            </tr>
+                        </thead>
+                        <tbody id="admin-products-table-body" class="divide-y divide-slate-100 text-sm"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- TAB: COUPONS -->
+            <div id="admin-content-coupons" class="space-y-6 hidden">
+                <div class="flex justify-between items-center bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                    <div>
+                        <h3 class="font-bold text-slate-900">Kody Rabatowe (Ważność: 10 dni)</h3>
+                        <p class="text-xs text-slate-500">Zarządzaj bonami i aktywuj kody ze zniżkami.</p>
+                    </div>
+                    <button onclick="openCouponModal()" class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-4 py-2.5 rounded-xl text-xs transition flex items-center space-x-2">
+                        <i class="fa-solid fa-ticket"></i> <span>Stwórz kod rabatowy</span>
+                    </button>
+                </div>
+                <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-slate-100 text-slate-600 text-xs uppercase font-semibold border-b border-slate-200">
+                                <th class="p-4">Kod</th>
+                                <th class="p-4">Wartość</th>
+                                <th class="p-4">Data utworzenia</th>
+                                <th class="p-4">Ważność (do)</th>
+                                <th class="p-4 text-right">Akcje</th>
+                            </tr>
+                        </thead>
+                        <tbody id="admin-coupons-table-body" class="divide-y divide-slate-100 text-sm"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- TAB: FILAMENTS -->
+            <div id="admin-content-filaments" class="space-y-6 hidden">
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                    <h3 class="font-bold text-slate-900">Wybór Filamentów i Bazy Materiałów</h3>
+                    <p class="text-xs text-slate-500 mb-4">Lista filamentów używanych w procesie druku 3D:</p>
+                    <ul class="list-disc list-inside text-xs text-slate-600 space-y-1 font-medium">
+                        <li>PLA Oliwkowy / Różowy Zombie</li>
+                        <li>PLA Czarny Silk</li>
+                        <li>PLA Pomarańczowy Halloween</li>
+                        <li>PLA Niebieski / Biały</li>
+                        <li>PLA Zmieniający kolor pod wpływem ciepła</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- TAB: MESSAGES -->
+            <div id="admin-content-messages" class="space-y-6 hidden">
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                    <h3 class="font-bold text-slate-900">Zgłoszenia z formularza "Napisz do nas"</h3>
+                </div>
+                <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-slate-100 text-slate-600 text-xs uppercase font-semibold border-b border-slate-200">
+                                <th class="p-4">E-mail</th>
+                                <th class="p-4">Problem</th>
+                                <th class="p-4">Treść zgłoszenia</th>
                                 <th class="p-4 text-right">Akcje</th>
                             </tr>
                         </thead>
                         <tbody id="admin-messages-table-body" class="divide-y divide-slate-100 text-sm"></tbody>
                     </table>
+                </div>
+            </div>
+
+            <!-- TAB: SETTINGS -->
+            <div id="admin-content-settings" class="space-y-6 hidden">
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm max-w-md">
+                    <h3 class="font-bold text-slate-900 mb-2">Zmień dane logowania Administratora</h3>
+                    <form onsubmit="handleUpdateAdminCredentials(event)" class="space-y-3">
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Nowy Login</label>
+                            <input type="text" id="new-admin-user" required class="w-full px-3 py-2 rounded-xl border border-slate-300 text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Nowe Hasło</label>
+                            <input type="password" id="new-admin-pass" required class="w-full px-3 py-2 rounded-xl border border-slate-300 text-sm">
+                        </div>
+                        <button type="submit" class="bg-slate-900 text-white px-4 py-2 rounded-xl text-xs font-bold">Zapisz zmienione dane</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -243,7 +309,7 @@
         <p>© 2026 Druki 3D by Boka. Wszelkie prawa zastrzeżone.</p>
     </footer>
 
-    <!-- PRODUCT DETAIL MODAL -->
+    <!-- MODAL PRODUCT DETAIL -->
     <div id="product-detail-modal" class="fixed inset-0 bg-black/60 z-50 hidden flex items-center justify-center p-4">
         <div class="bg-white rounded-3xl max-w-xl w-full p-6 relative shadow-2xl">
             <button onclick="closeProductDetailModal()" class="absolute top-5 right-5 w-8 h-8 bg-slate-100 rounded-full flex items-center justify-center text-slate-500 font-bold"><i class="fa-solid fa-xmark"></i></button>
@@ -295,25 +361,69 @@
                     <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Adres dostawy</label>
                     <input type="text" id="chk-address" required class="w-full px-3 py-2 rounded-xl border border-slate-300 text-sm" placeholder="Ulica, nr, miasto, kod">
                 </div>
+                
+                <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 space-y-2">
+                    <label class="block text-xs font-bold uppercase text-slate-600">Kod rabatowy</label>
+                    <div class="flex space-x-2">
+                        <input type="text" id="chk-coupon-code" class="w-full px-3 py-2 rounded-xl border border-slate-300 text-sm uppercase font-mono" placeholder="FriendsbyBoka15">
+                        <button type="button" onclick="applyCoupon()" class="bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold px-4 py-2 rounded-xl transition">Zastosuj</button>
+                    </div>
+                    <div id="coupon-message" class="text-[11px] font-bold"></div>
+                </div>
+
                 <div>
                     <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Forma płatności</label>
                     <select id="chk-payment" class="w-full px-3 py-2 rounded-xl border border-slate-300 text-sm font-medium bg-white">
-                        <option value="Szybki przelew / BLIK">Szybki przelew / BLIK</option>
-                        <option value="Karta płatnicza">Karta płatnicza</option>
+                        <option value="BLIK / Przelew ekspresowy">BLIK / Przelew ekspresowy</option>
                         <option value="Tradycyjny przelew bankowy">Tradycyjny przelew bankowy</option>
-                        <option value="Płatność przy odbiorze (za pobraniem)">Płatność przy odbiorze (za pobraniem)</option>
+                        <option value="Płatność przy odbiorze">Płatność przy odbiorze (za pobraniem)</option>
                     </select>
                 </div>
+
+                <div class="bg-slate-100 p-3 rounded-2xl flex justify-between items-center text-sm font-bold">
+                    <span>Razem do zapłaty:</span>
+                    <span id="chk-final-total" class="text-sky-600 text-lg">0,00 zł</span>
+                </div>
+
                 <button type="submit" class="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3 rounded-xl text-sm transition mt-2">Zamawiam i płacę</button>
             </form>
         </div>
     </div>
 
-    <!-- PRODUCT ADD/EDIT MODAL -->
+    <!-- PAYMENT CARD MODAL -->
+    <div id="payment-card-modal" class="fixed inset-0 bg-black/60 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-md w-full p-6 text-center space-y-4 shadow-2xl">
+            <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center text-2xl mx-auto font-bold">
+                ✓
+            </div>
+            <h3 class="text-xl font-black text-slate-900">Dziękujemy za zamówienie!</h3>
+            <p class="text-xs text-slate-500">Twoje zamówienie <strong id="pay-card-id" class="text-slate-900">#BOKA-0000</strong> zostało przekazane do realizacji.</p>
+            
+            <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200 text-left space-y-2 text-xs">
+                <div class="flex justify-between font-bold">
+                    <span class="text-slate-500">Do zapłaty:</span>
+                    <span id="pay-card-amount" class="text-sky-600 font-extrabold text-sm">0,00 zł</span>
+                </div>
+                <div class="flex justify-between">
+                    <span class="text-slate-500">Metoda:</span>
+                    <span id="pay-card-method" class="font-bold text-slate-800">BLIK</span>
+                </div>
+                <div class="pt-2 border-t border-slate-200 text-[11px] text-slate-500">
+                    <p class="font-bold text-slate-700">Dane do przelewu / kod BLIK:</p>
+                    <p>Odbiorca: Druki 3D by Boka</p>
+                    <p>Nr konta: 12 3456 7890 0000 0000 1234 5678</p>
+                </div>
+            </div>
+
+            <button onclick="finishOrderProcess()" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-3 rounded-xl text-xs transition">Zamknij i powróć do sklepu</button>
+        </div>
+    </div>
+
+    <!-- ADD/EDIT PRODUCT MODAL -->
     <div id="product-modal" class="fixed inset-0 bg-black/50 z-50 hidden flex items-center justify-center p-4">
         <div class="bg-white rounded-3xl max-w-lg w-full p-6 shadow-2xl max-h-[90vh] overflow-y-auto">
             <div class="flex justify-between items-center pb-4 border-b border-slate-200 mb-4">
-                <h3 id="product-modal-title" class="font-bold text-slate-900 text-lg">Dodaj Produkt</h3>
+                <h3 id="product-modal-title" class="font-bold text-slate-900 text-lg">Dodaj / Edytuj Przedmiot</h3>
                 <button onclick="closeProductModal()" class="text-slate-400"><i class="fa-solid fa-xmark text-lg"></i></button>
             </div>
             <form onsubmit="handleSaveProduct(event)" class="space-y-4">
@@ -334,34 +444,59 @@
                 </div>
                 <div class="grid grid-cols-2 gap-4">
                     <div>
-                        <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Kategoria</label>
+                        <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Kolekcja / Kategoria</label>
                         <select id="prod-category" class="w-full px-3 py-2 rounded-xl border border-slate-300 text-sm bg-white">
                             <option value="Halloween">Halloween</option>
-                            <option value="Create">Create</option>
-                            <option value="Zwierzaki">Zwierzaki</option>
-                            <option value="Breloczki">Breloczki</option>
-                            <option value="Mystery Boxy">Mystery Boxy</option>
+                            <option value="Inne">Inne</option>
+                            <option value="Popularne">Popularne</option>
+                            <option value="Nowości">Nowości</option>
                         </select>
                     </div>
                     <div>
-                        <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Etykieta (np. NOWOŚĆ, HIT)</label>
-                        <input type="text" id="prod-badge" class="w-full px-3 py-2 rounded-xl border border-slate-300 text-sm" placeholder="NOWOŚĆ">
+                        <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Wybór Filamentu</label>
+                        <input type="text" id="prod-filament" class="w-full px-3 py-2 rounded-xl border border-slate-300 text-sm" value="PLA Oliwkowy/Różowy">
                     </div>
                 </div>
                 <div>
-                    <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Dostępne kolory (po przecinku)</label>
-                    <input type="text" id="prod-colors" class="w-full px-3 py-2 rounded-xl border border-slate-300 text-sm" value="Zielony, Czarny, Pomarańczowy, Biały">
+                    <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Zdjęcie (URL)</label>
+                    <input type="text" id="prod-image-url" class="w-full px-3 py-2 rounded-xl border border-slate-300 text-xs" placeholder="Wklej link do zdjęcia...">
                 </div>
                 <div>
-                    <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Zdjęcie (Plik lub URL)</label>
-                    <input type="file" id="prod-file-input" accept="image/*" class="w-full text-xs text-slate-500 mb-2">
-                    <input type="text" id="prod-image-url" class="w-full px-3 py-2 rounded-xl border border-slate-300 text-xs" placeholder="Wklej link URL...">
-                </div>
-                <div>
-                    <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Opis</label>
+                    <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Opis przedmiotu</label>
                     <textarea id="prod-desc" rows="3" required class="w-full px-3 py-2 rounded-xl border border-slate-300 text-sm"></textarea>
                 </div>
-                <button type="submit" class="w-full bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 rounded-xl text-sm transition">Zapisz produkt</button>
+                <button type="submit" class="w-full bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 rounded-xl text-sm transition">Zapisz przedmiot</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- COUPON MODAL -->
+    <div id="coupon-modal" class="fixed inset-0 bg-black/50 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-md w-full p-6 shadow-2xl">
+            <div class="flex justify-between items-center pb-4 border-b border-slate-200 mb-4">
+                <h3 class="font-bold text-slate-900 text-lg">Nowy Kod Rabatowy</h3>
+                <button onclick="closeCouponModal()" class="text-slate-400"><i class="fa-solid fa-xmark text-lg"></i></button>
+            </div>
+            <form onsubmit="handleSaveCoupon(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Kod Rabatowy</label>
+                    <input type="text" id="cpn-code" required class="w-full px-3 py-2 rounded-xl border border-slate-300 text-sm font-mono uppercase" placeholder="NP. OTWARCIE1">
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Typ</label>
+                        <select id="cpn-type" class="w-full px-3 py-2 rounded-xl border border-slate-300 text-sm bg-white font-medium">
+                            <option value="percent">Procent (%)</option>
+                            <option value="amount">Kwota (zł)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Wartość</label>
+                        <input type="number" step="0.01" id="cpn-value" required class="w-full px-3 py-2 rounded-xl border border-slate-300 text-sm" placeholder="10">
+                    </div>
+                </div>
+                <p class="text-[10px] text-slate-400 italic">* Kody rabatowe są automatycznie ważne przez 10 dni od momentu ich utworzenia.</p>
+                <button type="submit" class="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3 rounded-xl text-sm transition">Stwórz kod</button>
             </form>
         </div>
     </div>
@@ -389,19 +524,26 @@
         }
 
         const DEFAULT_PRODUCTS = [
-            { id: '1', name: "Baby Żaba Zombie", price: 28.00, stock: 12, category: "Halloween", badge: "NOWOŚĆ", image: "https://images.unsplash.com/photo-1535930891776-0c2dfb7fda1a?w=500&auto=format&fit=crop&q=60", desc: "Niezwykła ruchoma figurka żaby w klimacie Halloween.", colors: ["Oliwkowy/Różowy", "Czarny", "Zielony"] },
-            { id: '2', name: "Clicker Dynia Halloween", price: 26.00, stock: 13, category: "Halloween", badge: "NOWOŚĆ", image: "https://images.unsplash.com/photo-1508759073847-9ca702cec7d2?w=500&auto=format&fit=crop&q=60", desc: "Klikający fidget antystresowy w formie dyniowej ze stylowym brelokiem.", colors: ["Pomarańczowy", "Czarny"] },
-            { id: '3', name: "Dinozaur Skeleton Flexi", price: 32.00, stock: 0, category: "Halloween", badge: "WYPRZEDANE", image: "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=500&auto=format&fit=crop&q=60", desc: "Ruchomy szkielet dinozaura wykonany z ekologicznego bioplastiku.", colors: ["Kość słoniowa", "Biały"] },
-            { id: '4', name: "Kreatywny Zestaw Create 3D", price: 45.00, stock: 5, category: "Create", badge: "HIT", image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=500&auto=format&fit=crop&q=60", desc: "Zestaw elementów 3D do własnoręcznego montażu i personalizacji.", colors: ["Multikolor"] }
+            { id: '1', name: "Baby Żaba Zombie", price: 28.00, stock: 12, category: "Halloween", filament: "PLA Zombie", image: "https://images.unsplash.com/photo-1535930891776-0c2dfb7fda1a?w=500&auto=format&fit=crop&q=60", desc: "Niezwykła ruchoma figurka żaby w klimacie Halloween." },
+            { id: '2', name: "Clicker Dynia Halloween", price: 26.00, stock: 13, category: "Halloween", filament: "PLA Pomarańczowy", image: "https://images.unsplash.com/photo-1508759073847-9ca702cec7d2?w=500&auto=format&fit=crop&q=60", desc: "Klikający fidget antystresowy w formie dyniowej ze stylowym brelokiem." }
+        ];
+
+        const DEFAULT_COUPONS = [
+            { id: 'c1', code: "FRIENDSBYBOKA15", type: "percent", value: 15, created: new Date().toISOString(), validUntil: new Date(Date.now() + 10*24*60*60*1000).toISOString().substring(0,10) },
+            { id: 'c2', code: "HALLOWEEN3D", type: "percent", value: 10, created: new Date().toISOString(), validUntil: new Date(Date.now() + 10*24*60*60*1000).toISOString().substring(0,10) },
+            { id: 'c3', code: "OTWARCIE1", type: "percent", value: 10, created: new Date().toISOString(), validUntil: new Date(Date.now() + 10*24*60*60*1000).toISOString().substring(0,10) }
         ];
 
         let products = DEFAULT_PRODUCTS;
         let orders = [];
         let messages = JSON.parse(localStorage.getItem('boka_messages')) || [];
+        let coupons = JSON.parse(localStorage.getItem('boka_coupons')) || DEFAULT_COUPONS;
         let cart = JSON.parse(localStorage.getItem('boka_cart')) || [];
-        let favorites = JSON.parse(localStorage.getItem('boka_favs')) || [];
+        let adminCreds = JSON.parse(localStorage.getItem('boka_admin_creds')) || { user: 'admin', pass: 'admin' };
+
         let isAdminLoggedIn = localStorage.getItem('boka_is_admin') === 'true';
         let currentCategory = 'Wszystko';
+        let activeDiscount = 0;
 
         window.onload = function() {
             loadDataFromCloud();
@@ -410,6 +552,7 @@
             if (isAdminLoggedIn) {
                 renderAdminProducts();
                 renderAdminOrders();
+                renderAdminCoupons();
                 renderAdminMessages();
             }
         };
@@ -434,28 +577,29 @@
                     snapshot.forEach(doc => messages.push({ id: doc.id, ...doc.data() }));
                     if (isAdminLoggedIn) renderAdminMessages();
                 });
+                db.collection("coupons").onSnapshot(snapshot => {
+                    if (!snapshot.empty) {
+                        coupons = [];
+                        snapshot.forEach(doc => coupons.push({ id: doc.id, ...doc.data() }));
+                    }
+                    if (isAdminLoggedIn) renderAdminCoupons();
+                });
             } else {
                 renderCatalog();
+                if (isAdminLoggedIn) {
+                    renderAdminProducts();
+                    renderAdminOrders();
+                    renderAdminCoupons();
+                    renderAdminMessages();
+                }
             }
         }
 
         function saveDataLocal() {
             localStorage.setItem('boka_cart', JSON.stringify(cart));
             localStorage.setItem('boka_messages', JSON.stringify(messages));
-            localStorage.setItem('boka_favs', JSON.stringify(favorites));
-        }
-
-        function toggleFavorite(e, id) {
-            e.stopPropagation();
-            if (favorites.includes(id)) {
-                favorites = favorites.filter(fId => fId !== id);
-                showToast("Usunięto z ulubionych");
-            } else {
-                favorites.push(id);
-                showToast("Dodano do ulubionych ❤️");
-            }
-            saveDataLocal();
-            renderCatalog();
+            localStorage.setItem('boka_coupons', JSON.stringify(coupons));
+            localStorage.setItem('boka_admin_creds', JSON.stringify(adminCreds));
         }
 
         function switchView(viewName) {
@@ -477,9 +621,9 @@
             currentCategory = cat;
             document.querySelectorAll('.cat-btn').forEach(btn => {
                 if (btn.textContent.includes(cat)) {
-                    btn.className = "cat-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-slate-900 text-white transition";
+                    btn.className = "cat-btn px-3 py-1.5 rounded-full text-xs font-semibold bg-slate-900 text-white transition";
                 } else {
-                    btn.className = "cat-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-slate-200 text-slate-700 hover:bg-slate-300 transition";
+                    btn.className = "cat-btn px-3 py-1.5 rounded-full text-xs font-semibold bg-slate-200 text-slate-700 hover:bg-slate-300 transition";
                 }
             });
             renderCatalog();
@@ -490,42 +634,22 @@
             grid.innerHTML = "";
             const filtered = currentCategory === 'Wszystko' ? products : products.filter(p => p.category === currentCategory);
 
-            if (filtered.length === 0) {
-                grid.innerHTML = `<div class="col-span-full text-center py-12 text-slate-400">Brak produktów w tej kategorii.</div>`;
-                return;
-            }
-
             filtered.forEach(p => {
                 const isAvailable = p.stock > 0;
-                const isFav = favorites.includes(p.id);
-                const badge = p.badge || (isAvailable ? 'NOWOŚĆ' : 'WYPRZEDANE');
-
                 grid.innerHTML += `
                     <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm flex flex-col justify-between cursor-pointer group hover:shadow-md transition text-center" onclick="openProductDetail('${p.id}')">
                         <div>
                             <div class="w-full h-48 bg-slate-100 rounded-xl overflow-hidden mb-3 relative flex items-center justify-center">
-                                <img src="${p.image || 'https://placehold.co/400x300'}" class="w-full h-full object-cover group-hover:scale-105 transition ${!isAvailable ? 'grayscale opacity-75' : ''}">
-                                
-                                ${isAvailable ? 
-                                    `<span class="absolute top-3 left-3 bg-emerald-500 text-white text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">${badge}</span>` : 
-                                    `<span class="absolute top-3 left-3 bg-slate-900 text-white text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">WYPRZEDANE</span>`
-                                }
-
-                                <button onclick="toggleFavorite(event, '${p.id}')" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/80 hover:bg-white text-slate-600 flex items-center justify-center transition shadow-sm">
-                                    <i class="${isFav ? 'fa-solid text-rose-500' : 'fa-regular'} fa-heart"></i>
-                                </button>
+                                <img src="${p.image}" class="w-full h-full object-cover group-hover:scale-105 transition">
+                                ${isAvailable ? '<span class="absolute top-3 left-3 bg-emerald-500 text-white text-[10px] font-black px-3 py-1 rounded-full uppercase">Dostępny</span>' : '<span class="absolute top-3 left-3 bg-slate-900 text-white text-[10px] font-black px-3 py-1 rounded-full uppercase">Wyprzedane</span>'}
                             </div>
-                            
                             <h3 class="font-bold text-slate-900 text-base mb-1">${p.name}</h3>
-                            <div class="text-sky-600 font-extrabold text-base mb-2">${p.price.toFixed(2)} zł</div>
-                            <div class="text-[10px] text-slate-400 uppercase font-bold tracking-wider mb-3">${p.category}, WSZYSTKO</div>
+                            <div class="text-sky-600 font-extrabold text-base mb-1">${p.price.toFixed(2)} zł</div>
+                            <p class="text-[11px] text-slate-400 line-clamp-1 mb-3">${p.desc}</p>
                         </div>
-
-                        <div>
-                            <button ${!isAvailable ? 'disabled' : ''} class="w-full ${isAvailable ? 'bg-sky-500 hover:bg-sky-600 text-white' : 'bg-slate-200 text-slate-400 cursor-not-allowed'} font-bold py-2.5 rounded-xl text-xs transition shadow-sm">
-                                ${isAvailable ? 'Dodaj do koszyka' : 'Wyprzedane'}
-                            </button>
-                        </div>
+                        <button ${!isAvailable ? 'disabled' : ''} class="w-full ${isAvailable ? 'bg-sky-500 hover:bg-sky-600 text-white' : 'bg-slate-200 text-slate-400 cursor-not-allowed'} font-bold py-2.5 rounded-xl text-xs transition">
+                            ${isAvailable ? 'Dodaj do koszyka' : 'Wyprzedane'}
+                        </button>
                     </div>
                 `;
             });
@@ -535,29 +659,16 @@
             const p = products.find(prod => prod.id == productId);
             if (!p) return;
 
-            const isAvailable = p.stock > 0;
-            let colors = p.colors || ["Oliwkowy/Różowy", "Czarny"];
-            let colorOpts = colors.map(c => `<option value="${c}">${c}</option>`).join('');
-
             document.getElementById('product-detail-content').innerHTML = `
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
-                    <img src="${p.image}" class="w-full h-64 object-cover rounded-2xl ${!isAvailable ? 'grayscale opacity-75' : ''}">
+                    <img src="${p.image}" class="w-full h-64 object-cover rounded-2xl">
                     <div class="space-y-4 text-left">
-                        <div>
-                            <span class="text-[10px] font-bold text-sky-600 uppercase tracking-wider">${p.category}</span>
-                            <h2 class="font-black text-slate-900 text-xl mt-0.5">${p.name}</h2>
-                        </div>
-                        <div class="flex justify-between items-center">
-                            <span class="text-sky-600 font-black text-xl">${p.price.toFixed(2)} zł</span>
-                            <span class="text-xs font-bold ${isAvailable ? 'text-emerald-600' : 'text-rose-500'}">${isAvailable ? p.stock + ' w magazynie' : 'Wyprzedane'}</span>
-                        </div>
-                        <p class="text-xs text-slate-500 leading-relaxed">${p.desc || ''}</p>
-                        <div>
-                            <label class="block text-[10px] font-bold uppercase text-slate-600 mb-1">Wybierz kolor:</label>
-                            <select id="modal-base-color" ${!isAvailable ? 'disabled' : ''} class="w-full px-3 py-2 rounded-xl border border-slate-300 text-xs font-medium">${colorOpts}</select>
-                        </div>
-                        <button onclick="addToCartModal('${p.id}')" ${!isAvailable ? 'disabled' : ''} class="w-full ${isAvailable ? 'bg-sky-500 hover:bg-sky-600 text-white' : 'bg-slate-200 text-slate-400 cursor-not-allowed'} font-bold py-3 rounded-xl text-xs transition">
-                            ${isAvailable ? 'Dodaj do koszyka' : 'Produkt wyprzedany'}
+                        <h2 class="font-black text-slate-900 text-xl">${p.name}</h2>
+                        <div class="text-sky-600 font-black text-xl">${p.price.toFixed(2)} zł</div>
+                        <p class="text-xs text-slate-500 leading-relaxed">${p.desc}</p>
+                        <div class="text-xs font-bold text-slate-700">Filament: <span class="font-normal text-slate-500">${p.filament || 'PLA Standard'}</span></div>
+                        <button onclick="addToCartModal('${p.id}')" class="w-full bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 rounded-xl text-xs transition">
+                            Dodaj do koszyka
                         </button>
                     </div>
                 </div>
@@ -565,20 +676,11 @@
             document.getElementById('product-detail-modal').classList.remove('hidden');
         }
 
-        function closeProductDetailModal() {
-            document.getElementById('product-detail-modal').classList.add('hidden');
-        }
+        function closeProductDetailModal() { document.getElementById('product-detail-modal').classList.add('hidden'); }
 
         function addToCartModal(id) {
             const p = products.find(prod => prod.id == id);
-            if (!p || p.stock <= 0) {
-                showToast("Produkt jest niedostępny w magazynie!", "error");
-                return;
-            }
-
-            const baseColor = document.getElementById('modal-base-color').value;
-
-            cart.push({ id: p.id, name: p.name, price: p.price, image: p.image, baseColor, qty: 1 });
+            cart.push({ cartItemId: 'citem_' + Date.now() + Math.random(), id: p.id, name: p.name, price: p.price, filament: p.filament, qty: 1 });
             saveDataLocal();
             updateCartUI();
             closeProductDetailModal();
@@ -587,29 +689,24 @@
 
         function updateCartUI() {
             const total = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
-            document.getElementById('cart-count').textContent = cart.reduce((s, i) => s + i.qty, 0);
+            document.getElementById('cart-count').textContent = cart.length;
             document.getElementById('cart-total-price').textContent = total.toFixed(2) + ' zł';
 
             const list = document.getElementById('cart-items-list');
             list.innerHTML = "";
-            if (cart.length === 0) {
-                list.innerHTML = `<div class="text-center py-8 text-slate-400 text-xs">Koszyk jest pusty.</div>`;
-                document.getElementById('checkout-btn').disabled = true;
-            } else {
-                document.getElementById('checkout-btn').disabled = false;
-                cart.forEach((item, idx) => {
-                    list.innerHTML += `
-                        <div class="flex justify-between items-center bg-slate-50 p-2.5 rounded-xl border border-slate-200 text-xs">
-                            <div>
-                                <span class="font-bold">${item.name}</span> (${item.baseColor})
-                                <div class="text-slate-400 text-[10px]">${item.price.toFixed(2)} zł</div>
-                            </div>
-                            <button onclick="cart.splice(${idx},1); saveDataLocal(); updateCartUI();" class="text-red-500 font-bold px-2">×</button>
+            cart.forEach((item, idx) => {
+                list.innerHTML += `
+                    <div class="flex justify-between items-center bg-slate-50 p-2.5 rounded-xl border border-slate-200 text-xs">
+                        <div>
+                            <span class="font-bold">${item.name}</span>
+                            <div class="text-slate-400 text-[10px]">${item.price.toFixed(2)} zł</div>
                         </div>
-                    `;
-                });
-            }
+                        <button onclick="cart.splice(${idx},1); saveDataLocal(); updateCartUI();" class="text-red-500 font-bold px-2">×</button>
+                    </div>
+                `;
+            });
             document.getElementById('cart-modal-total').textContent = total.toFixed(2) + ' zł';
+            document.getElementById('chk-final-total').textContent = Math.max(0, total - activeDiscount).toFixed(2) + ' zł';
         }
 
         function openCartModal() { document.getElementById('cart-modal').classList.remove('hidden'); }
@@ -617,54 +714,71 @@
         function openCheckoutModal() { closeCartModal(); document.getElementById('checkout-modal').classList.remove('hidden'); }
         function closeCheckoutModal() { document.getElementById('checkout-modal').classList.add('hidden'); }
 
+        function applyCoupon() {
+            const inputCode = document.getElementById('chk-coupon-code').value.trim().toUpperCase();
+            const msgEl = document.getElementById('coupon-message');
+            const total = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
+
+            const coupon = coupons.find(c => c.code === inputCode);
+            if (coupon) {
+                activeDiscount = coupon.type === 'percent' ? total * (coupon.value / 100) : coupon.value;
+                msgEl.textContent = `Kod zaakceptowany! Zniżka: -${activeDiscount.toFixed(2)} zł`;
+                msgEl.className = "text-[11px] font-bold text-emerald-600";
+            } else {
+                msgEl.textContent = "Nieprawidłowy kod rabatowy.";
+                msgEl.className = "text-[11px] font-bold text-rose-500";
+            }
+            updateCartUI();
+        }
+
         async function handlePlaceOrder(e) {
             e.preventDefault();
             const name = document.getElementById('chk-name').value + ' ' + document.getElementById('chk-surname').value;
             const email = document.getElementById('chk-email').value;
             const address = document.getElementById('chk-address').value;
             const payment = document.getElementById('chk-payment').value;
-            const total = cart.reduce((s, i) => s + (i.price * i.qty), 0);
-
-            cart.forEach(cItem => {
-                const p = products.find(prod => prod.id == cItem.id);
-                if (p) {
-                    p.stock = Math.max(0, p.stock - cItem.qty);
-                    if (db) db.collection("products").doc(p.id).update({ stock: p.stock });
-                }
-            });
+            const totalBefore = cart.reduce((s, i) => s + (i.price * i.qty), 0);
+            const finalAmount = Math.max(0, totalBefore - activeDiscount);
+            const orderId = "BOKA-" + Math.floor(1000 + Math.random() * 9000);
 
             const newOrder = {
-                id: "BOKA-" + Math.floor(1000 + Math.random() * 9000),
+                id: orderId,
                 date: new Date().toISOString().replace('T', ' ').substring(0, 16),
-                name, email, address, payment, total,
-                status: "Oczekujące",
-                items: [...cart]
+                name, email, address, payment, total: finalAmount,
+                status: "Oczekujące", items: [...cart]
             };
 
-            if (db) {
-                await db.collection("orders").add(newOrder);
-            } else {
-                orders.unshift(newOrder);
+            if (db) { 
+                await db.collection("orders").add(newOrder); 
+            } else { 
+                orders.unshift(newOrder); 
+                renderAdminOrders();
             }
 
+            closeCheckoutModal();
+            document.getElementById('pay-card-id').textContent = '#' + orderId;
+            document.getElementById('pay-card-amount').textContent = finalAmount.toFixed(2) + ' zł';
+            document.getElementById('pay-card-method').textContent = payment;
+            document.getElementById('payment-card-modal').classList.remove('hidden');
+        }
+
+        function finishOrderProcess() {
+            document.getElementById('payment-card-modal').classList.add('hidden');
             cart = [];
+            activeDiscount = 0;
             saveDataLocal();
             updateCartUI();
-            renderCatalog();
-            closeCheckoutModal();
-            showToast("Zamówienie złożone pomyślnie!");
+            showToast("Zamówienie przyjęte do realizacji!");
         }
 
         async function handleContactSubmit(e) {
             e.preventDefault();
-            const name = document.getElementById('cnt-name').value;
-            const email = document.getElementById('cnt-email').value;
-            const text = document.getElementById('cnt-msg').value;
-
             const newMsg = {
                 id: 'msg_' + Date.now(),
-                date: new Date().toISOString().replace('T', ' ').substring(0, 16),
-                name, email, text
+                email: document.getElementById('cnt-email').value,
+                problem: document.getElementById('cnt-problem').value,
+                text: document.getElementById('cnt-msg').value,
+                date: new Date().toISOString().replace('T', ' ').substring(0, 16)
             };
 
             if (db) {
@@ -672,22 +786,23 @@
             } else {
                 messages.unshift(newMsg);
                 saveDataLocal();
+                renderAdminMessages();
             }
 
             e.target.reset();
-            showToast("Wiadomość została wysłana!");
-            if (isAdminLoggedIn) renderAdminMessages();
+            showToast("Wiadomość wysłana!");
         }
 
         function handleLogin(e) {
             e.preventDefault();
-            if (document.getElementById('login-username').value === 'admin' && document.getElementById('login-password').value === 'admin') {
+            if (document.getElementById('login-username').value === adminCreds.user && document.getElementById('login-password').value === adminCreds.pass) {
                 isAdminLoggedIn = true;
                 localStorage.setItem('boka_is_admin', 'true');
                 updateAuthNav();
                 switchView('admin');
                 renderAdminProducts();
                 renderAdminOrders();
+                renderAdminCoupons();
                 renderAdminMessages();
             } else {
                 showToast("Błędne dane logowania!", "error");
@@ -701,76 +816,18 @@
             switchView('shop');
         }
 
-        function switchAdminTab(tab) {
-            document.getElementById('admin-content-products').classList.toggle('hidden', tab !== 'products');
-            document.getElementById('admin-content-orders').classList.toggle('hidden', tab !== 'orders');
-            document.getElementById('admin-content-messages').classList.toggle('hidden', tab !== 'messages');
-            
-            document.getElementById('admin-tab-products').className = tab === 'products' ? "py-3 px-6 font-bold text-sm text-sky-600 border-b-2 border-sky-500" : "py-3 px-6 font-bold text-sm text-slate-500 hover:text-slate-800";
-            document.getElementById('admin-tab-orders').className = tab === 'orders' ? "py-3 px-6 font-bold text-sm text-sky-600 border-b-2 border-sky-500" : "py-3 px-6 font-bold text-sm text-slate-500 hover:text-slate-800";
-            document.getElementById('admin-tab-messages').className = tab === 'messages' ? "py-3 px-6 font-bold text-sm text-sky-600 border-b-2 border-sky-500" : "py-3 px-6 font-bold text-sm text-slate-500 hover:text-slate-800";
-        }
-
-        function renderAdminProducts() {
-            const tbody = document.getElementById('admin-products-table-body');
-            tbody.innerHTML = "";
-            products.forEach(p => {
-                const isAvail = p.stock > 0;
-                tbody.innerHTML += `
-                    <tr class="border-b border-slate-100">
-                        <td class="p-4 flex items-center space-x-3">
-                            <img src="${p.image}" class="w-10 h-10 object-cover rounded-lg">
-                            <span class="font-bold">${p.name}</span>
-                        </td>
-                        <td class="p-4">${p.price.toFixed(2)} zł</td>
-                        <td class="p-4 font-bold ${isAvail ? 'text-slate-800' : 'text-rose-600'}">${p.stock} szt.</td>
-                        <td class="p-4"><span class="px-2 py-0.5 rounded text-[10px] font-bold ${isAvail ? 'bg-emerald-100 text-emerald-800' : 'bg-rose-100 text-rose-800'}">${isAvail ? 'Dostępny' : 'Wyprzedane'}</span></td>
-                        <td class="p-4 text-right space-x-2">
-                            <button onclick="deleteProduct('${p.id}')" class="text-red-500 font-semibold text-xs">Usuń</button>
-                        </td>
-                    </tr>
-                `;
-            });
-        }
-
-        function openProductModal() { document.getElementById('product-modal').classList.remove('hidden'); }
-        function closeProductModal() { document.getElementById('product-modal').classList.add('hidden'); }
-
-        async function handleSaveProduct(e) {
+        function handleUpdateAdminCredentials(e) {
             e.preventDefault();
-            const product = {
-                name: document.getElementById('prod-name').value,
-                price: parseFloat(document.getElementById('prod-price').value),
-                stock: parseInt(document.getElementById('prod-stock').value),
-                category: document.getElementById('prod-category').value,
-                badge: document.getElementById('prod-badge').value,
-                colors: document.getElementById('prod-colors').value.split(',').map(c => c.trim()),
-                image: document.getElementById('prod-image-url').value || 'https://placehold.co/400x300',
-                desc: document.getElementById('prod-desc').value
-            };
-
-            if (db) {
-                await db.collection("products").add(product);
-            } else {
-                product.id = 'prod_' + Date.now();
-                products.push(product);
-                renderCatalog();
-                renderAdminProducts();
-            }
-            closeProductModal();
-            showToast("Zapisano produkt!");
+            adminCreds.user = document.getElementById('new-admin-user').value;
+            adminCreds.pass = document.getElementById('new-admin-pass').value;
+            saveDataLocal();
+            showToast("Zmieniono dane administratora!");
         }
 
-        async function deleteProduct(id) {
-            if (confirm("Usunąć produkt?")) {
-                if (db) {
-                    await db.collection("products").doc(id).delete();
-                } else {
-                    products = products.filter(p => p.id !== id);
-                    renderCatalog();
-                    renderAdminProducts();
-                }
-            }
+        function switchAdminTab(tab) {
+            ['orders', 'products', 'coupons', 'filaments', 'messages', 'settings'].forEach(t => {
+                document.getElementById('admin-content-' + t).classList.toggle('hidden', t !== tab);
+            });
         }
 
         function renderAdminOrders() {
@@ -779,35 +836,204 @@
             document.getElementById('orders-badge').textContent = orders.length;
 
             if (orders.length === 0) {
-                tbody.innerHTML = `<tr><td colspan="5" class="p-6 text-center text-slate-400 text-xs">Brak zamówień w systemie.</td></tr>`;
+                tbody.innerHTML = `<tr><td colspan="5" class="p-6 text-center text-slate-400 text-xs">Brak zamówień.</td></tr>`;
                 return;
             }
 
-            orders.forEach((o, idx) => {
+            orders.forEach((o) => {
                 tbody.innerHTML += `
                     <tr class="border-b border-slate-100 text-xs">
                         <td class="p-4"><b>${o.id}</b><br>${o.date}</td>
-                        <td class="p-4"><b>${o.name}</b><br>${o.email}<br><span class="text-sky-600 font-semibold">Płatność: ${o.payment}</span></td>
-                        <td class="p-4">${o.items.map(i => `${i.qty}x ${i.name} (${i.baseColor})`).join('<br>')}</td>
+                        <td class="p-4"><b>${o.name}</b><br>${o.email}</td>
+                        <td class="p-4">${o.items.map(i => `${i.name} (${i.filament || 'PLA'})`).join('<br>')}</td>
                         <td class="p-4"><span class="px-2 py-1 rounded bg-amber-100 text-amber-800 font-bold">${o.status}</span></td>
                         <td class="p-4 text-right space-x-2">
-                            <button onclick="toggleOrderStatus('${o.id}')" class="bg-emerald-500 text-white px-3 py-1 rounded-lg font-bold">Zmień status</button>
-                            <button onclick="deleteOrder('${o.id}', ${idx})" class="bg-rose-600 hover:bg-rose-700 text-white px-3 py-1 rounded-lg font-bold transition">Usuń</button>
+                            <button onclick="toggleOrderStatus('${o.id}')" class="bg-emerald-500 text-white px-2.5 py-1 rounded-lg font-bold text-xs">Status</button>
+                            <button onclick="deleteOrder('${o.id}')" class="bg-rose-600 text-white px-3 py-1 rounded-lg font-bold text-xs">Usuń</button>
                         </td>
                     </tr>
                 `;
             });
         }
 
-        async function deleteOrder(id, idx) {
-            if (confirm("Czy na pewno chcesz usunąć to zamówienie z bazy?")) {
-                if (db && id && !id.startsWith("BOKA-")) {
-                    await db.collection("orders").doc(id).delete();
+        async function toggleOrderStatus(id) {
+            const o = orders.find(ord => ord.id === id);
+            if (o) {
+                const newStatus = o.status === 'Zrealizowano' ? 'Oczekujące' : 'Zrealizowano';
+                if (db && o.firebaseId) {
+                    await db.collection("orders").doc(o.firebaseId).update({ status: newStatus });
                 } else {
-                    orders.splice(idx, 1);
+                    o.status = newStatus;
                     renderAdminOrders();
                 }
-                showToast("Zamówienie zostało usunięte.");
+                showToast("Zaktualizowano status zamówienia!");
+            }
+        }
+
+        async function deleteOrder(id) {
+            if (confirm("Usunąć zamówienie z listy?")) {
+                if (db) {
+                    const snapshot = await db.collection("orders").where("id", "==", id).get();
+                    snapshot.forEach(doc => doc.ref.delete());
+                } else {
+                    orders = orders.filter(o => o.id !== id);
+                    renderAdminOrders();
+                }
+                showToast("Zamówienie usunięte.");
+            }
+        }
+
+        function renderAdminProducts() {
+            const tbody = document.getElementById('admin-products-table-body');
+            tbody.innerHTML = "";
+            products.forEach(p => {
+                tbody.innerHTML += `
+                    <tr class="border-b border-slate-100">
+                        <td class="p-4 font-bold">${p.name}</td>
+                        <td class="p-4">${p.price.toFixed(2)} zł</td>
+                        <td class="p-4 font-bold">${p.stock} szt.</td>
+                        <td class="p-4 text-xs font-semibold text-slate-500">${p.filament || 'PLA Standard'}</td>
+                        <td class="p-4 text-right space-x-2">
+                            <button onclick="editProduct('${p.id}')" class="bg-sky-500 text-white px-2.5 py-1 rounded-lg font-bold text-xs">Edytuj</button>
+                            <button onclick="deleteProduct('${p.id}')" class="text-red-500 font-semibold text-xs">Usuń</button>
+                        </td>
+                    </tr>
+                `;
+            });
+        }
+
+        function editProduct(id) {
+            const p = products.find(prod => prod.id == id);
+            if (!p) return;
+
+            document.getElementById('edit-product-id').value = p.id;
+            document.getElementById('prod-name').value = p.name;
+            document.getElementById('prod-price').value = p.price;
+            document.getElementById('prod-stock').value = p.stock;
+            document.getElementById('prod-category').value = p.category;
+            document.getElementById('prod-filament').value = p.filament || '';
+            document.getElementById('prod-image-url').value = p.image || '';
+            document.getElementById('prod-desc').value = p.desc || '';
+
+            openProductModal();
+        }
+
+        function openProductModal() { document.getElementById('product-modal').classList.remove('hidden'); }
+        function closeProductModal() { 
+            document.getElementById('edit-product-id').value = '';
+            document.getElementById('product-modal').classList.add('hidden'); 
+        }
+
+        async function handleSaveProduct(e) {
+            e.preventDefault();
+            const editId = document.getElementById('edit-product-id').value;
+            const productData = {
+                name: document.getElementById('prod-name').value,
+                price: parseFloat(document.getElementById('prod-price').value),
+                stock: parseInt(document.getElementById('prod-stock').value),
+                category: document.getElementById('prod-category').value,
+                filament: document.getElementById('prod-filament').value,
+                image: document.getElementById('prod-image-url').value || 'https://placehold.co/400x300',
+                desc: document.getElementById('prod-desc').value
+            };
+
+            if (editId) {
+                if (db) {
+                    await db.collection("products").doc(editId).update(productData);
+                } else {
+                    const p = products.find(prod => prod.id == editId);
+                    if (p) Object.assign(p, productData);
+                    renderCatalog();
+                    renderAdminProducts();
+                }
+            } else {
+                if (db) {
+                    await db.collection("products").add(productData);
+                } else {
+                    productData.id = 'p_' + Date.now();
+                    products.push(productData);
+                    renderCatalog();
+                    renderAdminProducts();
+                }
+            }
+
+            closeProductModal();
+            showToast("Zapisano przedmiot!");
+        }
+
+        async function deleteProduct(id) {
+            if (confirm("Usunąć ten przedmiot?")) {
+                if (db) {
+                    await db.collection("products").doc(id).delete();
+                } else {
+                    products = products.filter(p => p.id !== id);
+                    renderCatalog();
+                    renderAdminProducts();
+                }
+                showToast("Przedmiot usunięty.");
+            }
+        }
+
+        function openCouponModal() { document.getElementById('coupon-modal').classList.remove('hidden'); }
+        function closeCouponModal() { document.getElementById('coupon-modal').classList.add('hidden'); }
+
+        async function handleSaveCoupon(e) {
+            e.preventDefault();
+            const createdDate = new Date();
+            const validUntilDate = new Date(createdDate.getTime() + 10 * 24 * 60 * 60 * 1000);
+
+            const couponData = {
+                code: document.getElementById('cpn-code').value.trim().toUpperCase(),
+                type: document.getElementById('cpn-type').value,
+                value: parseFloat(document.getElementById('cpn-value').value),
+                created: createdDate.toISOString().substring(0, 10),
+                validUntil: validUntilDate.toISOString().substring(0, 10)
+            };
+
+            if (db) {
+                await db.collection("coupons").add(couponData);
+            } else {
+                couponData.id = 'c_' + Date.now();
+                coupons.push(couponData);
+                saveDataLocal();
+                renderAdminCoupons();
+            }
+            closeCouponModal();
+            showToast("Stworzono kod ważny 10 dni!");
+        }
+
+        function renderAdminCoupons() {
+            const tbody = document.getElementById('admin-coupons-table-body');
+            tbody.innerHTML = "";
+            if (coupons.length === 0) {
+                tbody.innerHTML = `<tr><td colspan="5" class="p-6 text-center text-slate-400 text-xs">Brak kodów.</td></tr>`;
+                return;
+            }
+            coupons.forEach((c) => {
+                tbody.innerHTML += `
+                    <tr class="border-b border-slate-100 text-xs">
+                        <td class="p-4 font-bold font-mono text-slate-900">${c.code}</td>
+                        <td class="p-4 font-bold text-sky-600">${c.value}${c.type === 'percent' ? '%' : ' zł'}</td>
+                        <td class="p-4 text-slate-500">${c.created || 'Dzisiaj'}</td>
+                        <td class="p-4 font-bold text-emerald-600">${c.validUntil || 'Za 10 dni'}</td>
+                        <td class="p-4 text-right">
+                            <button onclick="deleteCoupon('${c.id || c.code}')" class="text-rose-500 font-bold">Usuń</button>
+                        </td>
+                    </tr>
+                `;
+            });
+        }
+
+        async function deleteCoupon(id) {
+            if (confirm("Usuąć ten kod rabatowy?")) {
+                if (db) {
+                    await db.collection("coupons").doc(id).delete();
+                } else {
+                    coupons = coupons.filter(c => c.id !== id && c.code !== id);
+                    saveDataLocal();
+                    renderAdminCoupons();
+                }
+                showToast("Kod usunięty.");
             }
         }
 
@@ -815,51 +1041,34 @@
             const tbody = document.getElementById('admin-messages-table-body');
             tbody.innerHTML = "";
             document.getElementById('messages-badge').textContent = messages.length;
-
             if (messages.length === 0) {
-                tbody.innerHTML = `<tr><td colspan="3" class="p-6 text-center text-slate-400 text-xs">Brak wiadomości z formularza kontaktowego.</td></tr>`;
+                tbody.innerHTML = `<tr><td colspan="4" class="p-6 text-center text-slate-400 text-xs">Brak wiadomości.</td></tr>`;
                 return;
             }
-
-            messages.forEach((m, idx) => {
+            messages.forEach((m) => {
                 tbody.innerHTML += `
                     <tr class="border-b border-slate-100 text-xs">
-                        <td class="p-4">
-                            <b>${m.name}</b><br>
-                            <a href="mailto:${m.email}" class="text-sky-600 underline">${m.email}</a><br>
-                            <span class="text-[10px] text-slate-400">${m.date}</span>
-                        </td>
-                        <td class="p-4 max-w-md text-slate-700 leading-relaxed">${m.text}</td>
+                        <td class="p-4 font-bold">${m.email}</td>
+                        <td class="p-4 font-bold text-sky-600">${m.problem}</td>
+                        <td class="p-4 text-slate-600">${m.text}</td>
                         <td class="p-4 text-right">
-                            <button onclick="deleteMessage('${m.id}', ${idx})" class="text-rose-500 hover:text-rose-700 font-bold">Usuń</button>
+                            <button onclick="deleteMessage('${m.id}')" class="text-rose-500 font-bold">Usuń</button>
                         </td>
                     </tr>
                 `;
             });
         }
 
-        async function deleteMessage(id, idx) {
+        async function deleteMessage(id) {
             if (confirm("Usunąć tę wiadomość?")) {
-                if (db && id) {
+                if (db) {
                     await db.collection("messages").doc(id).delete();
                 } else {
-                    messages.splice(idx, 1);
+                    messages = messages.filter(m => m.id !== id);
                     saveDataLocal();
                     renderAdminMessages();
                 }
                 showToast("Wiadomość usunięta.");
-            }
-        }
-
-        async function toggleOrderStatus(id) {
-            const ord = orders.find(o => o.id === id);
-            if (ord) {
-                ord.status = ord.status === 'Zrealizowano' ? 'Oczekujące' : 'Zrealizowano';
-                if (db && !ord.id.startsWith("BOKA-")) {
-                    await db.collection("orders").doc(ord.id).update({ status: ord.status });
-                }
-                renderAdminOrders();
-                showToast("Zaktualizowano status zamówienia");
             }
         }
 
